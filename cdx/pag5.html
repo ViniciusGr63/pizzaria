@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="pag5.js"></script>
+
+    <style>
+        h1,p{           
+            display: inline-block;
+           
+        }
+      
+        section{
+            background-color: rgba(255, 255, 255, 0.298);
+        height: 700px;
+        width: 50%;
+        padding-top: 200px;
+        padding-left: 100px;
+        }
+        
+        .loc{
+            background-image: linear-gradient(to left, rgba(42, 26, 4, 0.138), rgba(178, 79, 43, 0.281),rgba(30, 11, 5, 0.269));
+            border-radius: 3px;
+            font-size: 40px;
+            margin: 5% 5%;
+
+        }
+        
+        body{
+        background-image: url(media/backgroug\ pizza.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;   
+        width: 100%;
+        padding: 0;
+        }
+        .caixa{
+            background-color: blanchedalmond;
+        }
+        
+       
+       
+    </style>
+
+</head>
+<body>
+
+
+
+
+   
+    <header>
+        <img src="media/iconedaheader.png" alt="icone" id="iconedaheader" >
+        <h1 id="title">Philip´s Oven</h1>
+    
+
+        <nav class="menu">
+        <ul>
+            <li><a href="pag1.html">Home</a>
+               
+            <li><a href="">Menu</a></a>
+                <ul>
+                    <li><a href="pag2.html">I.......Pratos</a></li>
+                    <li><a href="pag3.html">II......Bebidas</a></li>
+                  
+                </ul>
+               
+            </li>
+            
+            <li>
+                <a href="pag4.html">Encontre-nos</a>       
+            </li>
+            <li><a href="pag5.html">Pedidos</a></li>
+            
+        </ul>   
+    </nav>
+
+    </header>
+
+    
+
+
+
+
+    <main>
+        <section>
+            <h1>Pedido de Pizza</h1>
+
+            <label for="pizza">Escolha uma pizza:</label>
+            <select id="pizza" class="caixa">
+              <option value="calabresa">Calabresa</option>
+              <option value="mussarela">Mussarela c/ Frango</option>
+              <option value="portuguesa">Portuguesa</option>
+            </select>
+          
+            <br><br>
+          
+            <label for="bebida">Escolha uma bebida:</label>
+            <select id="bebida" class="caixa">
+              <option value="refrigerante">Refrigerante</option>
+              <option value="sucos">Sucos</option>
+              <option value="agua">Água</option>
+            </select>
+          
+            <br><br>
+          
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" class="caixa">
+          
+            <br><br>
+          
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" class="caixa">
+          
+            <br><br>
+          
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" class="caixa">
+          
+            <br><br>
+          
+            <button onclick="fazerPedido()" class="caixa">Fazer Pedido</button>
+            <button onclick="limparDados()" class="caixa">Limpar Dados</button>
+          
+            <div id="pedido"></div>
+          
+</section>
+
+        
+    </main>
+
+    <footer>
+        <h2>Fale conosco:</h2>
+        <ul>
+            <li>Telefone(whatsapp):(11)3221-3453</li>
+            <li>Email: Philip´s_Oven@gmail.com </li>
+            <li>Instagram: @Philip´s_Oven</li>
+            
+        </ul> 
+    </footer>
+    
+</body>
+</html>
